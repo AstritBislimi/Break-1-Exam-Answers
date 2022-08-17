@@ -1,9 +1,37 @@
-@use 'sass:list';
-
-$colors: green, yellow, yellowgreen, tomato, cornflowerblue, darkorange, darkgoldenrod, skyblue;
+@use "sass:list";
+@mixin regFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+$colors: green, yellow, yellowgreen, tomato, cornflowerblue, darkorange,
+  darkgoldenrod, skyblue;
 @for $i from 1 through list.length($colors) {
   .box-#{$i} {
     background-color: list.nth($colors, $i);
   }
 }
 
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 8.33333333333333333333% * $i;
+    min-height: 100px;
+    padding: 0;
+  }
+}
+
+.flex {
+  @include regFlex();
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  .row {
+    @include regFlex;
+    text-align: center;
+  }
+}

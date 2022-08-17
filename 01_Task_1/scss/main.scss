@@ -1,7 +1,42 @@
 $color: #263959;
+@mixin RegFlex($gap) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $gap;
+}
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   font-family: sans-serif;
 }
 
+.page-header {
+  background-color: $color;
+  padding: 10px;
+  @include RegFlex(0);
+  .main-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include RegFlex(0);
+    a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 20px 30px;
+    }
+  }
+}
+.container {
+  padding: 5vw 1vw;
+  .row {
+    @include RegFlex(30px);
+    .box-image {
+      width: 100%;
+    }
+  }
+}

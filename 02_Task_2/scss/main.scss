@@ -1,0 +1,11 @@
+@mixin grad($color1:white, $color2:black) {
+    background: linear-gradient($color1, $color2);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+body {
+@include grad( #fff,#eee)
+}

@@ -1,0 +1,124 @@
+.box-1 {
+  background-color: green;
+}
+
+.box-2 {
+  background-color: yellow;
+}
+
+.box-3 {
+  background-color: yellowgreen;
+}
+
+.box-4 {
+  background-color: tomato;
+}
+
+.box-5 {
+  background-color: cornflowerblue;
+}
+
+.box-6 {
+  background-color: darkorange;
+}
+
+.box-7 {
+  background-color: darkgoldenrod;
+}
+
+.box-8 {
+  background-color: skyblue;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-3 {
+  width: 25%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-6 {
+  width: 50%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-9 {
+  width: 75%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.col-12 {
+  width: 100%;
+  min-height: 100px;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+}
