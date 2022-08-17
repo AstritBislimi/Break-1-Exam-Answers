@@ -1,0 +1,9 @@
+@use 'sass:list';
+
+$colors: green, yellow, yellowgreen, tomato, cornflowerblue, darkorange, darkgoldenrod, skyblue;
+@for $i from 1 through list.length($colors) {
+  .box-#{$i} {
+    background-color: list.nth($colors, $i);
+  }
+}
+
